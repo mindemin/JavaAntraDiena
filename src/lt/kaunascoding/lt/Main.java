@@ -30,7 +30,7 @@ public class Main {
 
         Scanner skaityvtuvas = new Scanner(System.in);
         while (true) {
-            System.out.println("Turime is viso 5 uzduotis");
+            System.out.println("Turime is viso 7 uzduotis");
             System.out.println("Iveskite uzduoties numeri, kad  ja vykdyti.");
             System.out.println("Ivedus 0, programa bus baigta.");
             int pasirinkimas = skaityvtuvas.nextInt();
@@ -52,6 +52,12 @@ public class Main {
                     break;
                 case CHOISE_5:
                     Uzduotis05 penkta = new Uzduotis05();
+                    break;
+                case CHOISE_6:
+                    Uzduotis06 sesta = new Uzduotis06();
+                    break;
+                case CHOISE_7:
+                    Uzduotis07 septinta = new Uzduotis07();
                     break;
             }
         }
