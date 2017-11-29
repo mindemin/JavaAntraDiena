@@ -25,7 +25,7 @@ public class Main {
 
         Scanner skaityvtuvas = new Scanner(System.in);
         while (true) {
-            System.out.println("Turime is viso 1 uzduoti");
+            System.out.println("Turime is viso 4 uzduotis");
             System.out.println("Iveskite uzduoties numeri, kad  ja vykdyti.");
             System.out.println("Ivedus 0, programa bus baigta.");
             int pasirinkimas = skaityvtuvas.nextInt();
@@ -33,14 +33,22 @@ public class Main {
             switch (pasirinkimas) {
                 case CHOISE_0:
                     return;
-                case CHOISE_1: {
+                case CHOISE_1:
                     Uzduotis01 pirmoji = new Uzduotis01(); // Vykdo konstruktoriu.
                     break;
-                }
+                case CHOISE_2:
+                    Uzduotis02 antroji = new Uzduotis02();
+                    break;
+                case CHOISE_3:
+                    Uzduotis03 trecioji = new Uzduotis03();
+                    break;
+                case CHOISE_4:
+                    Uzduotis04 ketvirta = new Uzduotis04();
             }
-
-
         }
 
+
     }
+
 }
+
