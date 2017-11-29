@@ -9,6 +9,11 @@ public class Main {
     public static final int CHOISE_2 = 2; // konstanta, kad nesunkiai keistusi visoje programoje.
     public static final int CHOISE_3 = 3; // konstanta, kad nesunkiai keistusi visoje programoje.
     public static final int CHOISE_4 = 4;
+    public static final int CHOISE_5 = 5;
+    public static final int CHOISE_6 = 6;
+    public static final int CHOISE_7 = 7;
+    public static final int CHOISE_8 = 8;
+    public static final int CHOISE_9 = 9;
 
     public static void main(String[] args) {
         // PLANAS
@@ -25,7 +30,7 @@ public class Main {
 
         Scanner skaityvtuvas = new Scanner(System.in);
         while (true) {
-            System.out.println("Turime is viso 4 uzduotis");
+            System.out.println("Turime is viso 5 uzduotis");
             System.out.println("Iveskite uzduoties numeri, kad  ja vykdyti.");
             System.out.println("Ivedus 0, programa bus baigta.");
             int pasirinkimas = skaityvtuvas.nextInt();
@@ -44,6 +49,10 @@ public class Main {
                     break;
                 case CHOISE_4:
                     Uzduotis04 ketvirta = new Uzduotis04();
+                    break;
+                case CHOISE_5:
+                    Uzduotis05 penkta = new Uzduotis05();
+                    break;
             }
         }
 
